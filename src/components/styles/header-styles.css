@@ -20,7 +20,9 @@
   flex-direction: row;
   justify-content: space-between;
   font-size: calc(10px + 2vmin);
-  color: rgb(255, 255, 255);
+}
+.navbar-items {
+  float: right;
 }
 ul {
   display: flex;
@@ -28,6 +30,12 @@ ul {
   margin: 0;
   padding: 0 20px;
   list-style-type: none;
+}
+link:hover {
+  color: yellow;
+}
+button {
+  background: yellow;
 }
 
 .Header-link {
