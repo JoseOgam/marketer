@@ -1,8 +1,7 @@
 import React from "react";
 import Home from "./home";
 import Contact from "./contact";
-// import logo from './logo.svg';
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import "./styles/header-styles.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
