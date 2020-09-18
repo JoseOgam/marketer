@@ -1,7 +1,7 @@
 import React from "react";
-import "./styles/contact.css";
+import "../styles/contact.css";
 
-const Contact = () => {
+const ContactPage = () => {
   return (
     <div className="contact-css">
       <div className="container col-md-6">
@@ -80,4 +80,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default ContactPage;
