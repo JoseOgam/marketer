@@ -4,6 +4,7 @@ import "../styles/header-styles.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function Header() {
+  const activeStyle = { color: "#FFFF00" };
   return (
     <div>
       <nav className="navbar navbar-expand-lg py-3 navbar-dark bg-dark shadow-sm">
@@ -33,23 +34,35 @@ function Header() {
 
           <div id="navbarSupportedContent" className="collapse navbar-collapse">
             <ul className="navbar-nav ml-auto">
-              <li className="nav-item active">
-                <NavLink to="/" className="nav-link">
-                  Home <span className="sr-only">(current)</span>
+              <li className="nav-item">
+                <NavLink to="/" className="nav-link" activeStyle={activeStyle}>
+                  Home
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink to="#" className="nav-link">
+                <NavLink
+                  to="/about"
+                  className="nav-link"
+                  activeStyle={activeStyle}
+                >
                   About
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink to="#" className="nav-link">
+                <NavLink
+                  to="/services"
+                  className="nav-link"
+                  activeStyle={activeStyle}
+                >
                   Services
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink to="/contact" className="nav-link">
+                <NavLink
+                  to="/contact"
+                  className="nav-link"
+                  activeStyle={activeStyle}
+                >
                   Contact
                 </NavLink>
               </li>

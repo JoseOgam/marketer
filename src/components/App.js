@@ -1,15 +1,23 @@
 import React from "react";
-import { Route } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import HomePage from "./home/HomePage";
 import ContactPage from "./contact/ContactPage";
+import About from "./about/AboutPage";
+import Services from "./services/servicesPage";
+import PageNotFound from "./PageNotFound";
 import Header from "./common/Header";
 
 const App = () => {
   return (
     <div>
       <Header />
-      <Route exact path="/" component={HomePage} />
-      <Route path="/contact" component={ContactPage} />
+      <Switch>
+        <Route exact path="/" component={HomePage} />
+        <Route path="/contact" component={ContactPage} />
+        <Route path="/about" component={About} />
+        <Route path="/services" component={Services} />
+        <Route component={PageNotFound} />
+      </Switch>
     </div>
   );
 };
