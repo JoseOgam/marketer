@@ -1,5 +1,6 @@
 .footer {
   background: black;
   color: white;
-  height: 50%;
+  flex-shrink: none;
+  box-shadow: 0 50vh 0 50vh #000;
 }
