@@ -33,14 +33,14 @@ const HomePage = () => {
           </div>
         </div>
         <a
-          className="carousel-control-prev"
+          className="carousel-control-prev "
           href="#carouselExampleIndicators"
           role="button"
           data-slide="prev"
         >
           <span
-            className="carousel-control-prev-icon"
-            aria-hidden="true"
+            className="carousel-control-prev-icon "
+            aria-hidden="false"
           ></span>
           <span className="sr-only">Previous</span>
         </a>
