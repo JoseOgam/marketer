@@ -7,6 +7,7 @@ import About from "./about/AboutPage";
 import Services from "./services/servicesPage";
 import PageNotFound from "./PageNotFound";
 import Header from "./common/Header";
+import Footer from "./common/Footer";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
         <Route path="/services" component={Services} />
         <Route component={PageNotFound} />
       </Switch>
+      <Footer />
     </div>
   );
 };

@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.css";
-import Briler01 from "../images/broiler01.jpg";
+import Kienyej from "../images/kienyej.jpg";
 import Layers from "../images/layers.jpeg";
 import Kienyeji from "../images/kienyeji.jpg";
 
@@ -23,7 +23,7 @@ const HomePage = () => {
         </ol>
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <img className="image" src={Briler01} alt="First slide" />
+            <img className="image" src={Kienyej} alt="First slide" />
           </div>
           <div className="carousel-item">
             <img className="d-block w-100" src={Layers} alt="Second slide" />
