@@ -1,6 +1,13 @@
 import React from "react";
+// import { Link } from "react-router-dom";
 import "./Footer.css";
-import "bootstrap/dist/css/bootstrap.min.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebook,
+  faTwitter,
+  faLinkedin,
+  faGooglePlus,
+} from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
   return (
@@ -17,6 +24,28 @@ const Footer = () => {
                 content. Lorem ipsum dolor sit amet, consectetur adipisicing
                 elit.
               </p>
+              <ul className="list-unstyled list-inline text-center">
+                <li className="list-inline-item">
+                  <a href="#!" className="btn-floating btn-fb mx-1">
+                    <FontAwesomeIcon icon={faFacebook} />
+                  </a>
+                </li>
+                <li className="list-inline-item">
+                  <a href="#!" className="btn-floating btn-tw mx-1">
+                    <FontAwesomeIcon icon={faTwitter} />
+                  </a>
+                </li>
+                <li className="list-inline-item">
+                  <a href="#!" className="btn-floating btn-gplus mx-1">
+                    <FontAwesomeIcon icon={faGooglePlus} />
+                  </a>
+                </li>
+                <li className="list-inline-item">
+                  <a href="#!" className="btn-floating btn-li mx-1">
+                    <FontAwesomeIcon icon={faLinkedin} />
+                  </a>
+                </li>
+              </ul>
             </div>
 
             {/* <hr className="clearfix w-100 d-md-none"> */}
@@ -26,20 +55,22 @@ const Footer = () => {
                 Links
               </h5>
 
-              <ul className="list-unstyled">
-                <li>
-                  <a href="#!">Link 1</a>
-                </li>
-                <li>
-                  <a href="#!">Link 2</a>
-                </li>
-                <li>
-                  <a href="#!">Link 3</a>
-                </li>
-                <li>
-                  <a href="#!">Link 4</a>
-                </li>
-              </ul>
+              <div className="row">
+                <ul className="list-unstyled">
+                  <li>
+                    <a href="#!">Link 1</a>
+                  </li>
+                  <li>
+                    <a href="#!">Link 2</a>
+                  </li>
+                  <li>
+                    <a href="#!">Link 3</a>
+                  </li>
+                  <li>
+                    <a href="#!">Link 4</a>
+                  </li>
+                </ul>
+              </div>
             </div>
 
             {/* <hr className="clearfix w-100 d-md-none"> */}
@@ -94,34 +125,6 @@ const Footer = () => {
         {/* <hr> */}
 
         {/* <hr> */}
-
-        <ul className="list-unstyled list-inline text-center">
-          <li className="list-inline-item">
-            <a className="btn-floating btn-fb mx-1">
-              <i className="fab fa-facebook-f"> </i>
-            </a>
-          </li>
-          <li className="list-inline-item">
-            <a className="btn-floating btn-tw mx-1">
-              <i className="fab fa-twitter"> </i>
-            </a>
-          </li>
-          <li className="list-inline-item">
-            <a className="btn-floating btn-gplus mx-1">
-              <i className="fab fa-google-plus-g"> </i>
-            </a>
-          </li>
-          <li className="list-inline-item">
-            <a className="btn-floating btn-li mx-1">
-              <i className="fab fa-linkedin-in"> </i>
-            </a>
-          </li>
-          <li className="list-inline-item">
-            <a className="btn-floating btn-dribbble mx-1">
-              <i className="fab fa-dribbble"> </i>
-            </a>
-          </li>
-        </ul>
 
         <div className="footer-copyright text-center py-3">
           © 2020 Copyright:
