@@ -4,3 +4,7 @@
   flex-shrink: none;
   box-shadow: 0 50vh 0 50vh #000;
 }
+
+a {
+  text-decoration: none;
+}
